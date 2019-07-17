@@ -1,2 +1,9 @@
-# Pandas
-pandas学习笔记
+# pandas学习笔记
+## day01
+  - 01_practice_structure.py
+    - 数据结构
+    - 设置索引的方式
+    - Series
+    - DataFrame
+  - 02_data_structure.py
+    - 创建date_range
