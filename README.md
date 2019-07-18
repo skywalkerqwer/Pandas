@@ -2,8 +2,18 @@
 ## day01
   - 01_practice_structure.py
     - 数据结构
-    - 设置索引的方式
     - Series
+        - 一维数组
+        - 可设置索引
     - DataFrame
+        - 表格数据
   - 02_data_structure.py
-    - 创建date_range
+    - Series的创建和查找
+    - DataFrame的创建和查找
+  - 03_practice.py
+    - 查找练习
+## day02
+  - 01_practice.py
+    - DataFrame数据修改
+  - 02_describe.py
+    - 统计性描述
