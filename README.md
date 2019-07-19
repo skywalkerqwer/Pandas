@@ -17,3 +17,15 @@
     - DataFrame数据修改
   - 02_describe.py
     - 统计性描述
+  - 03_get_data.py
+    - 读取.dat
+    - 读取.csv
+    - 读取.xlsx
+  - 04_get_data_practice.py
+    - 读取练习
+## day03
+  - 01_group.py
+    - 分组聚合操作
+  - 02_group_practice.py
+    - 通过python对象分组
+  - 03_

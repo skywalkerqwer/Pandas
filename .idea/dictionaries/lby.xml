@@ -2,6 +2,7 @@
   <dictionary name="lby">
     <words>
       <w>ndarray</w>
+      <w>xlsx</w>
     </words>
   </dictionary>
 </component>
