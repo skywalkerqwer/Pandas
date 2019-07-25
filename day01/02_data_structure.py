@@ -22,9 +22,10 @@ print(s3)
 date = pd.date_range(start='20100101', periods=6, freq='M')
 print(date)
 df = pd.DataFrame(index=date, columns=list('abcd'), data=np.random.randn(6, 4))
+print('*df:')
 print(df)
 # 数据的列名
-print('_____________',df.columns)
+print('_____________', df.columns)
 # 数据的形状
 print(df.shape)
 
@@ -33,6 +34,7 @@ print(df.shape)
 print(df.a)
 print(df[['a', 'b']])
 # 选择行数据
+print('*df[0:3]:')
 print(df[0:3])
 print(df.head(1))
 
@@ -44,6 +46,6 @@ print(df.iloc[:4, [0, 1]])  # 绝对位置查找
 # 通过ix方式查找
 print(df.ix[:4, ['a', 'b']])  # 两者都可以接收
 # 通过表达式查找
-print(df.loc[df.index<'20100430'])
-print('-'*50)
-print(df.loc[:,df.columns=='b'])
+print(df.loc[df.index < '20100430'])
+print('-' * 50)
+print(df.loc[:, df.columns == 'b'])
