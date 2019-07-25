@@ -20,7 +20,7 @@ print(df1)
 
 """
 在gender后面加一列city
-1. list.insert(index, obj)
+1. list.insert(index, obj) 
 2. index -- 对象 obj 需要插入的索引位置。
 3. obj -- 要插入列表中的对象
 """
@@ -38,17 +38,22 @@ print(df1)
 # 1 创建一个DataFrame。要注意，在这里需加入index属性，lisa F 北京 19 100
 # 2 开始插值。ignore_index=True,可以帮助忽略index，自动递增。
 """
+print('*'*50)
 new = pd.DataFrame(data={'name':'Lisa','gender':'F','city':'北京','age':19,'score':100},index=[4])
-df1 = df1.append(new, ignore_index = True)
-print(df1)
+df1_new = df1.append(new, ignore_index=True)
+print(df1_new)
+
+print('*'*50)
+df1_new = pd.concat([df1,new])
+print(df1_new)
 
 # print('删除功能练习')
 # # 删除第0行
-df2 = df1.drop(labels=0, axis=0)
+df2 = df1_new.drop(labels=0, axis=0)
 print(df2)
 # # 删除第score列
-df3 = df1.drop(labels='score', axis=1)
+df3 = df1_new.drop(labels='score', axis=1)
 print(df3)
 # 对score列排序
-df4 = df1.sort_values(by='score', ascending=False)  # T -> 升
+df4 = df1_new.sort_values(by='score', ascending=False)  # T -> 升
 print(df4)

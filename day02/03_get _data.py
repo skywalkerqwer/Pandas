@@ -30,7 +30,8 @@ data.iloc[1, 2] = 1
 data.to_csv('iris1.csv')  # 保存修改
 
 # 获取表格文件
-excel = pd.read_excel('data.xlsx')
+excel = pd.read_excel('../pd_data/data.xlsx')
 print(excel)
 
-
+# 存储文件
+users.to_pickle('../pd_data/users.pickle')
